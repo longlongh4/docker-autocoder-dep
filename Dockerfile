@@ -1,5 +1,4 @@
 FROM ruby:alpine
 
-RUN apk add --update nodejs \
-    && gem install activerecord
+RUN gem install activerecord
 

@@ -1,4 +1,6 @@
 FROM ruby:alpine
 
-RUN gem install activerecord
+RUN gem install activerecord \
+	&& gem install sinatra \
+	&& gem install thin
 

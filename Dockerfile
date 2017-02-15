@@ -1,7 +1,6 @@
-FROM ruby:alpine
+FROM ruby
 
-RUN apk --update add --no-cache --virtual build-dependencies g++ musl-dev make \
-	&& gem install activerecord \
+RUN gem install activerecord \
 	&& gem install sinatra \
 	&& gem install thin 
 
